@@ -1,0 +1,78 @@
+  * {
+         --lightBlue: #9ec3fc;
+         --darkBlue: #223842;
+         --lightBlueTransparent: #9ec3fc60;
+         --orangeTransparent: #c29e5660;
+         --greenTransparent: #00766760;
+         --green: #007667;
+     }
+    body, html {
+        height: 100%;
+        background-color: var(--lightBlueTransparent);
+        margin: 0;
+    }
+    .text {
+        width: 80%;
+        font-size: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: var(--darkBlue);
+        opacity: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .button {
+    display: block;
+    font-size: 125%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    text-align: center;
+    line-height: 45px;
+    background-color: var(--green);
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    }
+   
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 0px;
+    }
+    h1{
+        font-size: 300%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--orangeTransparent);
+        width: 60%;
+        justify-content: center;
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    @media only screen and (max-width: 1200px){
+        .info {
+            float: left;
+            
+            background-color: var(--lightBlueTransparent);
+            font-size: 125%;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+        .button{
+            width: 450px;
+        }
+    }
+
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}

@@ -1,0 +1,77 @@
+* {
+    --lightBlue: #9ec3fc;
+    --darkBlue: #223842;
+    --lightBlueTransparent: #9ec3fc60;
+    --orangeTransparent: #c29e5660;
+    --greenTransparent: #00766760;
+    --green: #007667;
+}
+
+.info {
+    float: left;
+    height: 95%;
+    width: 50%;
+    background-color: var(--lightBlueTransparent);
+}
+.grad {
+    float: left;
+    height: 95%;
+    width: 50%;
+    background: linear-gradient(to left, #ffffff00, #ffffff), url(images/aboutus.jpg);
+    background-size: cover;
+
+}
+h1{
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--orangeTransparent);
+    width: 60%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.content {
+    text-indent: 2.0em;
+    width: 80%;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: var(--darkBlue);
+    opacity: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 1200px){
+    .info {
+        float: left;
+        
+        background-color: var(--lightBlueTransparent);
+        font-size: 125%;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .button{
+        width: 450px;
+    }
+    .content {
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 860px){
+    .info {
+        float: left;
+        height: 150%;
+        width: 100%;
+        background-color: var(--lightBlueTransparent);
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .content {
+        font-size: 150%;
+    }
+    .grad {
+        display: none;
+    
+    }
+}

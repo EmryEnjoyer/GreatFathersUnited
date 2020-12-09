@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="footer.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+    </head>
+    <body>
+        <ul class="navigation">
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="volunteer.html"><li>Volunteer</li></a>
+            <a href="donate.html"><li>Donate</li></a>
+            <a href="aboutus.html"><li>About Us</li></a>
+            <a href="index.html"><li>Home</li></a>
+        </ul>
+        <div class="info">
+            <h1>
+                Contact Us
+            </h1>
+            <p class="line">Call us!</p>
+            <a href="tel:1-555-123-4567" style="text-decoration: none"><p class="phone">(555) 123-4567</p></a><br>
+            <p class="line">Or, send us a message!</p>
+            
+            <form  action="contact.php" method="POST" enctype="multipart/form-data" class="form">
+                <input type="hidden" name="action" value="submit">
+                Your name:<br>
+                <input name="name" type="text" value="" size="30" required><br>
+                Your email:<br>
+                <input name="email" type="email" value="" size="30" required><br>
+                Subject:<br>
+                <input name="subject" type="text" value="" size="30" required><br>
+                Your message:<br>
+                <textarea name="message" rows="7" cols="30" required></textarea><br>
+                <input type="submit" value="Send email"/>
+                </form>
+            
+        </div>
+        <footer>
+            <ul id="footertext">
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="volunteer.html"><li>Volunteer</li></a>
+                <a href="donate.html"><li>Donate</li></a>
+                <a href="aboutus.html"><li>About Us</li></a>
+                <a href="index.html"><li>Home</li></a>
+            </ul>
+            <br>
+            Copyright &copy; 2020
+                
+        </footer>
+    </body>
+</html>
